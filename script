@@ -1,0 +1,46 @@
+# 1 
+
+Classloading
+compiling to .classes
+ -loading into virtual machine
+Where does it load from
+-classpath
+
+setting the classpath
+    globally    
+    locally
+
+
+mkdir classes
+
+javac -d classes -sourcepath src src/com/mantiso/Helper.java
+javac -d classes -sourcepath src src/com/pluralsight/Main.java
+
+globally
+export CLASSPATH=classes
+# windows# set CLASSPATH=classes
+
+set when we run:
+java -cp classes com.pluralsight.Main
+
+more than one location:
+multiple class location : or ;
+
+create jar for 
+jar cvf helper.jar com/mantiso/Helper.class
+
+Remove helper class
+rm classes/com/mantiso/Helper.class
+
+java -cp classes com.pluralsight.Main
+
+#2
+classloading basics (bootstrap , extending classloader , classloading delegation, delegations within classloaders)
+write our own classloaders
+hot deploying java code (using classloaders)
+understanding reflection
+use reflection to implements a IoC containers
+
+
+
+
