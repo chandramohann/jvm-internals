@@ -41,6 +41,20 @@ hot deploying java code (using classloaders)
 understanding reflection
 use reflection to implements a IoC containers
 
+loading order
+
+1. jre/ lib
+
+jars core classes ex: rt.jar
+
+2. jre/lib/ext for external lib : ex cryptography classes
+
+3. javac jdk has a ext folder 
+can be used to compile main class finding the dependency in the helper.jar in the jdr ext folder
+
+4. setting extensions as a part of running java
+java -cp classes -Djava.ext.dirs=c:\lib com.pluralsight.Main
 
 
 
+https://app.pluralsight.com/paths/skills/core-spring
