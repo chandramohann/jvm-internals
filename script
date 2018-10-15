@@ -55,6 +55,16 @@ can be used to compile main class finding the dependency in the helper.jar in th
 4. setting extensions as a part of running java
 java -cp classes -Djava.ext.dirs=c:\lib com.pluralsight.Main
 
+5. building 
+
+
+printing delegation
+
+javac -sourcepath src src/com/pluralsight/Delegation.java -d classes
+java -cp classes com.pluralsight.Delegation
+
+
+
 
 
 https://app.pluralsight.com/paths/skills/core-spring
